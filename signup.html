@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMIT - Yahya Mass IT Training LMS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav">
+                <div class="logo">
+                    <img class="logo-image" src="assests/images/logo transparent.png" alt="Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Dashboard</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Assignments</a></li>
+                    <li><a href="#">Grades</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <div class="user-profile">
+                    <span>Muhammad Ahmad</span>
+                    <div class="profile-pic">MA</div>
+                    <button type="button" id="logoutBtn" class="btn-secondary">Logout</button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i> My Courses</a></li>
+                    <li><a href="#"><i class="fas fa-tasks"></i> Assignments</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Progress</a></li>
+                    <li><a href="#"><i class="fas fa-user-check"></i> Attendance</a></li>
+                    <li><a href="#"><i class="fas fa-calendar"></i> Schedule</a></li>
+                    <li><a href="#"><i class="fas fa-certificate"></i> Certificates</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Discussion Forum</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="content-area">
+                <!-- Welcome Section -->
+                <div class="welcome-section">
+                    <h1>Welcome back, Muhammad!</h1>
+                    <p>Ready to continue your journey in technology with YMIT? Let's make today count and keep building your skills for the future.</p>
+                </div>
+
+                <!-- Search Section -->
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <input type="text" id="courseSearch" class="search-input" placeholder="Search courses, assignments, or resources...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-book-open"></i>
+                        <h3>6</h3>
+                        <p>Enrolled Courses</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-tasks"></i>
+                        <h3>12</h3>
+                        <p>Assignments Due</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>4</h3>
+                        <p>Certificates Earned</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>85%</h3>
+                        <p>Overall Progress</p>
+                    </div>
+                </div>
+
+                <!-- Courses Section -->
+                <div class="courses-section">
+                    <div class="section-header">
+                        <h2>My Courses</h2>
+                        <a href="#" class="btn">
+                            <i class="fas fa-plus"></i>
+                            Enroll New Course
+                        </a>
+                    </div>
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <div class="course-header">
+                                <h3 class="course-title">Web Development</h3>
+                                <p class="course-instructor">Instructor: Sir Ghous Ahmed</p>
+                            </div>
+                            <div class="course-body">
+                                <div class="course-progress">
+                                    <div class="progress-label">
+                                        <span>Progress</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-progress="75"></div>
+                                    </div>
+                                </div>
+                                <div class="course-actions">
+                                    <a href="#" class="btn">Continue</a>
+                                    <a href="#" class="btn-secondary">Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-header">
+                                <h3 class="course-title">Mobile App Development</h3>
+                                <p class="course-instructor">Instructor: Sir Inzamam ul Haq</p>
+                            </div>
+                            <div class="course-body">
+                                <div class="course-progress">
+                                    <div class="progress-label">
+                                        <span>Progress</span>
+                                        <span>45%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-progress="45"></div>
+                                    </div>
+                                </div>
+                                <div class="course-actions">
+                                    <a href="#" class="btn">Continue</a>
+                                    <a href="#" class="btn-secondary">Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-header">
+                                <h3 class="course-title">Graphic Design</h3>
+                                <p class="course-instructor">Instructor: Mam Hira Khan</p>
+                            </div>
+                            <div class="course-body">
+                                <div class="course-progress">
+                                    <div class="progress-label">
+                                        <span>Progress</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-progress="90"></div>
+                                    </div>
+                                </div>
+                                <div class="course-actions">
+                                    <a href="#" class="btn">Continue</a>
+                                    <a href="#" class="btn-secondary">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Announcements -->
+        <div class="announcements">
+            <h2 class="announcement-heading">📢 Recent Announcements</h2>
+            <div class="announcement-item">
+                <div class="announcement-date">August 15, 2025</div>
+                <div class="announcement-title">New Web Development Batch Starting at YMIT</div>
+                <div class="announcement-content">Registration is now open for our next Web Development batch. Limited seats available! Join Yahya Mass IT Training today.</div>
+            </div>
+            <div class="announcement-item">
+                <div class="announcement-date">August 12, 2025</div>
+                <div class="announcement-title">Eid Holiday Notice</div>
+                <div class="announcement-content">YMIT classes will be suspended from August 20-22 for Eid celebrations. Resume on August 23.</div>
+            </div>
+            <div class="announcement-item">
+                <div class="announcement-date">August 10, 2025</div>
+                <div class="announcement-title">YMIT Career Fair 2025</div>
+                <div class="announcement-content">Join us for the annual career fair on September 5th. Top companies will be recruiting our YMIT graduates.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="login-modal">
+        <div class="modal-content">
+            <h2 class="login-heading">Login to YMIT LMS</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Student ID / Email</label>
+                    <input type="text" id="username" placeholder="Enter your Student ID or Email">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="modal-actions">
+                    <button type="button" id="cancelLogin" class="btn-secondary">Cancel</button>
+                    <button type="submit" class="btn">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
